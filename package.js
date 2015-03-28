@@ -1,13 +1,14 @@
 Package.describe({
   summary: "Angular video player directive",
   version: "0.0.5",
-  name: 'harel:videogular',
+  name: 'harellevy:videogular',
   git: "https://github.com/harellevy/videogular-meteor.git"
 });
 
 Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
   api.use('urigo:angular@0.7.2', 'client');
+  api.use('angularjs:angular-sanitize@1.3.6', 'client');
 
   // Load angular-file-upload lib.
   api.addFiles('lib/bower_components/videogular/videogular.min.js', 'client');
@@ -19,7 +20,7 @@ Package.onUse(function (api) {
 Package.onTest(function (api) {
   api.use('tinytest');
 
-  api.use('harel:videogular');
+  api.use('harellevy:videogular');
 
-  api.addFiles('harel:videogular-meteor-tests.js', 'client');
+  api.addFiles('harellevy:videogular-meteor-tests.js', 'client');
 });
