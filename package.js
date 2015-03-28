@@ -2,7 +2,7 @@ Package.describe({
   summary: "Angular video player directive",
   version: "0.0.5",
   name: 'harellevy:videogular',
-  git: "https://github.com/harellevy/videogular-meteor.git"
+  git: "https://github.com/harellevy/meteor-videogular.git"
 });
 
 Package.onUse(function (api) {
